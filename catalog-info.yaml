@@ -15,11 +15,11 @@
 apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
-  name: my-app
+  name: argocd-demo
   description: An example of a Backstage application.
   annotations:
     argocd/app-name: my-app
-    backstage.io/kubernetes-id: my-app
+    backstage.io/kubernetes-id: argocd-demo
 spec:
   type: service
   owner: user:guest  
