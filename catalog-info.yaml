@@ -20,6 +20,7 @@ metadata:
   annotations:
     argocd/app-name: my-app
     backstage.io/kubernetes-id: argocd-demo
+    kubernetes.io/cluster-name: docker-desktop
 spec:
   type: service
   owner: user:guest  
@@ -34,7 +35,8 @@ metadata:
   description: An example of a Backstage application.
   annotations:
     argocd/app-name: my-kubernetes-component
-    backstage.io/kubernetes-id: my-kubernetes-component
+    backstage.io/kubernetes-id: default
+    kubernetes.io/cluster-name: docker-desktop    
 spec:
   type: service
   owner: user:guest  
