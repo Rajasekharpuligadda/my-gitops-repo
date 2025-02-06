@@ -29,6 +29,7 @@ metadata:
   name: awesome-app-service
   labels:
     app: awesome-app
+    backstage.io/kubernetes-id: awesome-app  #🔹 Backstage Integration Label
 spec:
   type: NodePort  # Exposes service on a port accessible from the host
   selector:
