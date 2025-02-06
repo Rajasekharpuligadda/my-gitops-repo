@@ -14,6 +14,7 @@ spec:
     metadata:
       labels:
         app: awesome-app
+        backstage.io/kubernetes-id: awesome-app  # 🔹 Backstage Integration Label
     spec:
       containers:
         - name: awesome-app
