@@ -4,7 +4,7 @@ metadata:
   name: awesome-app
   labels:
     app: awesome-app
-    #backstage.io/kubernetes-id: awesome-app  #🔹 Backstage Integration Label
+    backstage.io/kubernetes-id: awesome-app  #🔹 Backstage Integration Label
 spec:
   replicas: 2  # Running 2 instances (pods)
   selector:
