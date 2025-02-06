@@ -31,10 +31,10 @@ spec:
 apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
-  name: default
+  name: my-apache
   description: An example of a Backstage application.
   annotations:
-    argocd/app-name: my-kubernetes-component
+    argocd/app-name: my-apache
     backstage.io/kubernetes-id: default
     kubernetes.io/cluster-name: docker-desktop    
 spec:
