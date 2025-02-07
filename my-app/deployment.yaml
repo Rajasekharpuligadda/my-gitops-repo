@@ -4,6 +4,7 @@ metadata:
   name: my-app
   namespace: default
   labels:
+    app: my-app
     backstage.io/kubernetes-id: my-app
 spec:
   replicas: 4
