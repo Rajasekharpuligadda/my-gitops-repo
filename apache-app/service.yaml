@@ -3,6 +3,9 @@ kind: Service
 metadata:
   name: apache-service
   namespace: default
+  labels:
+    app: apache-app
+    backstage.io/kubernetes-id: apache-app
 spec:
   selector:
     app: apache-app
