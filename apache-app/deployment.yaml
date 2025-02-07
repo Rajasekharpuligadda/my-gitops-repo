@@ -12,6 +12,7 @@ spec:
     metadata:
       labels:
         app: apache-app
+        backstage.io/kubernetes-id: apache-app  #🔹 Backstage Integration Label
     spec:
       containers:
       - name: apache-container
