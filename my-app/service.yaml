@@ -3,6 +3,9 @@ kind: Service
 metadata:
   name: my-app-service
   namespace: default
+  labels:
+    app: my-app
+    backstage.io/kubernetes-id: my-app
 spec:
   selector:
     app: my-app

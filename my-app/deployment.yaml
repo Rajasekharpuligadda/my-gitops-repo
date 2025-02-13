@@ -3,6 +3,9 @@ kind: Deployment
 metadata:
   name: my-app
   namespace: default
+  labels:
+    app: my-app
+    backstage.io/kubernetes-id: my-app  #🔹 Backstage Integration Label
 spec:
   replicas: 4
   selector:
@@ -12,9 +15,14 @@ spec:
     metadata:
       labels:
         app: my-app
+        backstage.io/kubernetes-id: my-app  #🔹 Backstage Integration Label
     spec:
       containers:
         - name: my-app
           image: nginx:latest
           ports:
             - containerPort: 80
+
+
+
+            

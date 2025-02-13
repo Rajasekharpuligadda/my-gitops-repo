@@ -3,6 +3,9 @@ kind: Deployment
 metadata:
   name: apache-app
   namespace: default
+  labels:
+    app: apache-app
+    backstage.io/kubernetes-id: apache-app   #🔹 Backstage Integration Label
 spec:
   replicas: 2
   selector:
@@ -12,6 +15,7 @@ spec:
     metadata:
       labels:
         app: apache-app
+        backstage.io/kubernetes-id: apache-app  #🔹 Backstage Integration Label
     spec:
       containers:
       - name: apache-container
